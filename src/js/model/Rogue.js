@@ -35,9 +35,9 @@ export default class Rogue extends Job{
       return this.str +=20, this.dex +=30
     } else if(!t){
       this.text = `emerges from the darkness`;
-        return this.str -=20,this.dex -=30;
+        return this.str -=20, this.dex -=30;
       } else {
-        return this.str = 5;
+        return this.str = 5, this.dex = 5;
       }
     }
     }

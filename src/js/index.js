@@ -234,10 +234,10 @@ elements.buff1.addEventListener('click',()=>{
     if(player1.buff){
       elements.battleMessage.textContent=`${player1name} is ${player1.text}`;
       // buff1.textContent = 'Boo!';
-      special1.disabled =false;
+      elements.special1.disabled =false;
     } else{
       // buff1.textContent = `${player1.buffName}`;
-      special1.disabled =true;
+      elements.special1.disabled =true;
       elements.battleMessage.textContent=`${player1name} is ${player1.text}`;
 
     }
@@ -251,11 +251,11 @@ elements.buff1.addEventListener('click',()=>{
       if(player2.buff){
         elements.battleMessage.textContent=`${player2name} is is ${player2.text}`;
         // buff2.textContent = 'Calm down';
-        special2.disabled =false;
+        elements.special2.disabled =false;
 
       } else  {
         // buff2.textContent = player2.buffName;
-        elements.pecial2.disabled =true;
+        elements.special2.disabled =true;
         elements.battleMessage.textContent=`${player2name} is is ${player2.text}`;
 
       }

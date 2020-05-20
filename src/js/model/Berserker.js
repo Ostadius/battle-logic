@@ -32,6 +32,8 @@ export default class Berserker extends Job{
       else if(!t){
         this.text = 'calming down...';
         return this.str -=30,this.dex -=10;
+      }else{
+        return this.str =5, this.dex = 5;
       }
     }
 
