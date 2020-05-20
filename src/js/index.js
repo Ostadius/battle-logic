@@ -6,10 +6,9 @@ import Engineer from './model/Engineer';
 import { elements } from './view/base';
 
 // base.js => Elements
-let newGame,newGame1, create,createCount,player1,player2,turn1,turn2,
-turnCount,displayhp1,displayhp2,updatehp1,updatehp2,player1hp,player2hp,hpCheck1,hpCheck2,player1name,player2name,
-battleReady,atk1,atk2,buff2,buff1,special1,special2,rogue,berserker,engineer,scribe,other,
-inputField,statParameters =[],classes,newGameAlert,createBtn,radioChoice,toggleBuffP1,toggleBuffP2,nameChoice,navbar,navTop,newGameBar;
+let newGame, create,createCount,player1,player2,turn1,turn2,
+turnCount,player1hp,player2hp,player1name,player2name,
+battleReady,rogue,berserker,engineer,scribe,other,statParameters =[],classes,newGameAlert,radioChoice,nameChoice,navbar,navTop,newGameBar;
 console.log('log');
 newGameAlert = false;
 navTop = elements.navbar.offsetTop;
@@ -21,12 +20,12 @@ elements.hpCheck1.disabled = true;
 elements.hpCheck2.disabled = true;
 elements.newGame.disabled = true;
 elements.newGameBar.disabled= true;
-elements.createCount=0;
+createCount=0;
 
 
 const init =()=>{
   if(elements.newGame.classList.contains('newgame-alert')) elements.newGame.classList.toggle('newgame-alert');
-  elements.createCount=0;
+  createCount=0;
   battleReady =true;
   turn1=0;
   turn2=0;
@@ -75,8 +74,8 @@ const init =()=>{
 //Character create function, make stats dynamic somehow
 const createFunction =()=>{
 
-  elements.createCount+=1;
-  console.log(elements.createCount);
+  createCount+=1;
+  console.log(createCount);
   radioChoice = document.querySelector('input[name="job"]:checked').value;
   nameChoice = document.querySelector('.input-name').value;
   console.log(nameChoice);
@@ -84,32 +83,32 @@ const createFunction =()=>{
   switch (radioChoice) {
     case 'rogue':
     rogue =new Rogue(`${nameChoice}`,2);
-    elements.createCount === 1 ?player1=rogue :player2=rogue;
+    createCount === 1 ?player1=rogue :player2=rogue;
     console.log(rogue);
     break;
     case 'berserker':
     berserker =new Berserker(`${nameChoice}`,2);
-    elements.createCount === 1 ?player1=berserker :player2=berserker;
+    createCount === 1 ?player1=berserker :player2=berserker;
     console.log(berserker);
     break;
     case 'engineer':
     engineer =new Engineer(`${nameChoice}`,2);
-    elements.createCount === 1 ?player1=engineer :player2=engineer;
+    createCount === 1 ?player1=engineer :player2=engineer;
     console.log(engineer);
     break;
     case 'scribe':
     scribe =new Scribe(`${nameChoice}`,2);
-    elements.createCount === 1 ?player1=scribe :player2=scribe;
+    createCount === 1 ?player1=scribe :player2=scribe;
     console.log(scribe);
     break;
     case 'other':
     other =new Job(`${nameChoice}`,2)
-    elements.createCount === 1 ?player1=other :player2=other;
+    createCount === 1 ?player1=other :player2=other;
     console.log(other);
     break;
   }
   document.querySelector('.input-name').value = "";
-  if(elements. createCount===2){
+  if(createCount===2){
     elements.createBtn.disabled = true;
     elements.inputField.disabled=true;
 
