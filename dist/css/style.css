@@ -13,33 +13,14 @@ body{
 .battle-flow{
 
 }
+.box{
+  width: 60%;
+
+}
+/* Navbar */
 nav a{
   text-decoration: none;
   text-transform: uppercase;
-}
-.button-all button{
-  height: 70px;
-  width: 150px;
-  color: white;
-  padding-top: 10px;
-  background-color: #041615;
-  border: 3px solid grey;
-  margin: 1px;
-  border-radius: 12px;
-  font-weight: bold;
-
-}
-.battle-logo{
-  margin-top: 10px;
-  float: left;
-  padding-top:3%;
-  background: url('../img/logowhite.png');
-  background-size: cover;
-  display: block;
-  margin-left: 14%;
-  width: 110px;
-  height: 40px;
-
 }
 .search-container{
   float: right;
@@ -58,6 +39,51 @@ nav a{
   border: none;
   cursor: pointer;
 }
+.battle-logo{
+  margin-top: 10px;
+  float: left;
+  padding-top:3%;
+  background: url('../img/logowhite.png');
+  background-size: cover;
+  display: block;
+  margin-left: 14%;
+  width: 110px;
+  height: 40px;
+
+}
+.top-navbar{
+
+  overflow: hidden;
+  background-color: rgba(6, 34, 37, 1);
+
+  height:70px;
+  width: 100%;
+}
+.top-navbar a{
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: Goudy Old Style;
+  float: left;
+  padding-top: 2%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+
+}
+
+.top-navbar ul{
+  padding-left: 26%;
+  list-style: none;
+
+}
+.top-navbar ul :hover{
+  color: red;
+  cursor: pointer;
+  background-color: rgb(0, 62, 254);
+
+}
+
 /* .bottom-bar{
   overflow: hidden;
   background-color: rgba(4, 232, 255, 1);
@@ -84,43 +110,12 @@ nav a{
 } */
 
 
-.top-navbar{
-
-  overflow: hidden;
-  background-color: rgba(6, 34, 37, 1);
-
-  height:70px;
-  width: 100%;
-}
 /* .fixed-top-navbar{
   position: fixed;
   top:0;
   z-index: 1;
 } */
-.top-navbar a{
-  text-align: center;
-  font-size: 18px;
-  color: white;
-  font-family: Goudy Old Style;
-  float: left;
-  padding-top: 2%;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 30px;
 
-}
-
-.top-navbar ul{
-  padding-left: 26%;
-  list-style: none;
-
-}
-.top-navbar ul :hover{
-  color: red;
-  cursor: pointer;
-  background-color: rgb(0, 62, 254);
-
-}
 .main-container{
 
 }
@@ -143,9 +138,10 @@ nav a{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: rgb(149, 149, 149);
-  width: 60%;
+  background: url('../img/fantasyback.jpg');
+  background-size:cover;
   height: 500px;
+  width: 50%;
   border-radius: 9px;
 
 }
@@ -198,16 +194,45 @@ nav a{
   background-color: #d210b7;
 }
 
-.button-all{
+.buttons-section{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-all1,
+.button-all2
+{
+  width: 100%;
+
+  float: left;
   border-right: 6px solid rgb(241, 7, 209);
   border-bottom: 6px solid rgb(241, 7, 209);
   background-color: rgba(235, 27, 27, 0.43) ;
-  margin: 10%  25% 0 26%;
-  width: 48%;
-  display: block;
-  padding-top: 20px;
+
+
 }
-.button-all:after {
+
+.button-all1 button,
+.button-all2 button{
+
+  height: 70px;
+  width: 120px;
+  margin-left: 35%;
+  color: white;
+  padding-top: 10px;
+  background-color: #041615;
+  border: 3px solid grey;
+  border-radius: 20px;
+  font-weight: bold;
+
+}
+.button-all1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button-all2:after {
   content: "";
   display: table;
   clear: both;
@@ -225,6 +250,18 @@ nav a{
   float: left;
   width: 50%;
 }
+.button-box3{
+
+  padding: 10px;
+  float: left;
+  width: 50%;
+}
+.button-box4{
+
+  padding: 10px;
+  float: left;
+  width: 50%;
+}
 .newgame-alert{
   margin-top: 1%;
   color: #FF69B4;
@@ -234,20 +271,22 @@ nav a{
 }
 .new-game{
   margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 12px;
-  margin-left: 42%;
-
+  display: block;
+}
+.section-create{
 
 }
-
 .create-form{
   text-align: center;
   box-shadow: 10px 10px 5px black;
   background-color: #434343;
   border-radius: 5px;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10%;
   padding: 10px;
   color: hotpink;

@@ -33,44 +33,78 @@
     <div class="battle-flow">
 
   </div>
-  <div class="charbox-container">
-    <div id="char1" class="charbox-1">
-      <div id="p1hp" class="p1hp">000</div>
-      <div id="p1hp-updated" class="p1hp-updated">000</div>
+  <section>
 
-      <div class="char-model1-head">
+  <div class="row">
+    <div class="charbox-container">
+      <div id="char1" class="charbox-1">
+        <div id="p1hp" class="p1hp">000</div>
+        <div id="p1hp-updated" class="p1hp-updated">000</div>
+
+        <div class="char-model1-head">
+        </div>
+        <div class="char-model1-torso">
+        </div>
       </div>
-      <div class="char-model1-torso">
-      </div>
-    </div>
-    <div id="char2" class="charbox-2">
-      <div id="p2hp" class="p2hp">000</div>
-      <div id="p2hp-updated" class="p2hp-updated">000</div>
-      <div class="char-model2-head">
-      </div>
-      <div class="char-model2-torso">
+      <div id="char2" class="charbox-2">
+        <div id="p2hp" class="p2hp">000</div>
+        <div id="p2hp-updated" class="p2hp-updated">000</div>
+        <div class="char-model2-head">
+        </div>
+        <div class="char-model2-torso">
+        </div>
       </div>
     </div>
 </div>
+</section>
+<section class="buttons-section">
 
-    <div class="button-all">
-    <div class="button-box1">
-        <button id="act-button" class="p1-atk act">Attack p1</button>
-        <button id="act-button" class="p1-buff act">Buff p1</button>
-        <button id="act-button" class="p1-special act" disabled>Spec.Atkp1</button>
-        <button class="hp-check1 pass">HP1</button>
+    <div class="row">
+      <div class="col span-1-of-2 box">
+        <div class="button-all1">
+          <div class="col span-1-of-2 box">
+            <div class="button-box1">
+              <button id="act-button" class="p1-atk act">Attack p1</button>
+              <button id="act-button" class="p1-buff act">Buff p1</button>
+            </div>
+
+          </div>
+          <div class="col span-1-of-2 box">
+            <div class="button-box2">
+            <button id="act-button" class="p1-special act" disabled>Spec.Atkp1</button>
+            <button class="hp-check1 pass">HP1</button>
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="button-box2">
-        <button id="act-button" class="p2-atk act">Attack p2</button>
-        <button id="act-button" class="p2-buff act">Buff p2</button>
-        <button id="act-button" class="p2-special act" disabled>Spec.Atkp2</button>
-        <button class="hp-check2 pass">HP2</button>
+      <div class="col span-1-of-2 box">
+      <div class="button-all2">
+        <div class="col span-1-of-2 box">
+          <div class="button-box3">
+            <button id="act-button" class="p2-atk act">Attack p2</button>
+            <button id="act-button" class="p2-buff act">Buff p2</button>
+          </div>
+        </div>
+        <div class="col span-1-of-2 box">
+          <div class="button-box4">
+            <button id="act-button" class="p2-special act" disabled>Spec.Atkp2</button>
+            <button class="hp-check2 pass">HP2</button>
+          </div>
+        </div>
+
+        </div>
 
       </div>
-      </div>
+    </div>
+  </section>
+
 
 
       <button class="new-game">NEW GAME</button>
+      <section class="section-create">
+      <div class="row">
+
+      </div>
       <div class="create-form">
 
         <p>Name:</p><input type="text" value="" class="input-name" />
@@ -92,6 +126,7 @@
         </div>
 
       </div>
+    </section>
     </div>
       <div class="footer-container">
         <div class="footer-item-1"/>
