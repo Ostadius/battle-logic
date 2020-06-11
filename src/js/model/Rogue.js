@@ -15,7 +15,7 @@ export default class Rogue extends Job{
   }
   special1=()=>{
     let dmg =Math.floor(this.dex *2);
-    this.text = 'is about to do stab a sucka to deff.... it did';
+    this.text = ' is about to do stab a sucka to deff.... it did';
     return dmg;
   }
   bleedingEdge=()=>{

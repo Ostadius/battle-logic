@@ -20,7 +20,7 @@ export default class Scribe extends Job{
   }
   mindMelt=()=>{
     let newHp = this.hp - 4;
-    this.text = 'sharpens the blade with blood';
+    this.text = 'the mind of the opponent....melts?';
       return newHp;
   }
   toggleBuff=()=>{
@@ -31,7 +31,7 @@ export default class Scribe extends Job{
   buffEffect=(t)=>{
 
       if(t){
-      this.text = `focuses...*calculated*`;
+      this.text = `focuses...*calculates*`;
       return this.str +=20, this.dex +=30
     } else if(!t){
       this.text = `relaxes the mind...`;

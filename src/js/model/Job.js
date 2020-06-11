@@ -1,6 +1,6 @@
 
 export default class Job {
-  constructor(name,lvl,hp=100,str=5,dex=5,mag=5,con=5,moon='unknown',talent=0,glyph='none'){
+  constructor(name,lvl,hp=500,str=5,dex=5,mag=5,con=5,moon='unknown',talent=0,glyph='none'){
     this.name=name;
     this.lvl=lvl;
     this.hp=hp;

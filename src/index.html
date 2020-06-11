@@ -1,248 +1,234 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" rel="stylesheet" href="css/style2.css">
-    <link type="text/css" rel="stylesheet" href="css/grid.css">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link type="text/css" rel="stylesheet" href="css/style2.css">
+      <link type="text/css" rel="stylesheet" href="css/grid.css">
+      <meta charset="utf-8">
+      <title>Battle Logic</title>
+   </head>
+   <body>
+      <div class="top-navbar">
+        <div class="row">
+          <div class="col span-1-of-4">
 
-    <meta charset="utf-8">
-    <title>Battle Logic</title>
-  </head>
-  <body>
-    <div class="top-navbar">
-    <img class="battle-logo">
-    <nav >
-      <ul>
-        <li><a href="#" id="new-game-nav">New Game</a></li>
-        <li><a href="asdads">Home</a></li>
-        <li><a href="charpage.html">Character Stats</a></li>
-      </ul>
-    <div class="search-container">
-      <form action="">
-        <input type="text" placeholder="Search.." class="search-field">
-        <button type="submit"><img class="search-button"></img></button>
-      </form>
+         <i class="battle-logo"></i>
+       </div>
+       <div class="col span-2-of-4">
+         <div class="nav-links">
 
-    </div>
-    </nav>
-  </div>
-  <div class="main-container">
-  <div id="battle-message" class="battle-message">Shit's about to go<br>down!</div>
-  <div class="battle-flow">
-
-</div>
-<section class="battle-interface">
-
-<div class="row">
-  <div class="button-container">
-  <div class="col span-1-of-4 box">
-    <div class="button-all1">
-          <div id="p1hp" class="p1hp">000</div>
-          <div id="p1hp-updated" class="p1hp-updated">000</div>
-          <button id="act-button" class="p1-atk act">Attack p1</button>
-          <button id="act-button" class="p1-buff act">Buff p1</button>
-        <button id="act-button" class="p1-special act" disabled>Spec.Atkp1</button>
-        <button class="hp-check1 pass">HP1</button>
-    </div>
-  </div>
-</div>
-  <div class=" col span-2-of-4">
-    <div class="charbox-container">
-      <div id="char1" class="charbox-1">
+         <nav>
 
 
-        <div class="char-model1-head">
-        </div>
-        <div class="char-model1-torso">
-        </div>
-      </div>
-      <div id="char2" class="charbox-2">
+            <ul>
+               <li><a href="#" id="new-game-nav">New Game</a></li>
+               <li><a href="asdads">Home</a></li>
+               <li><a href="charpage.html">Character Stats</a></li>
+            </ul>
+          </div>
+          </div>
+          <!-- <div class="col span-1-of-4">
 
-        <div class="char-model2-head">
-        </div>
-        <div class="char-model2-torso">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col span-1-of-4 box">
-  <div class="button-all2">
-        <div id="p2hp" class="p2hp">000</div>
-        <div id="p2hp-updated" class="p2hp-updated">000</div>
-        <button id="act-button" class="p2-atk act">Attack p2</button>
-        <button id="act-button" class="p2-buff act">Buff p2</button>
-        <button id="act-button" class="p2-special act" disabled>Spec.Atkp2</button>
-        <button class="hp-check2 pass">HP2</button>
-
-    </div>
-
-  </div>
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-    <button class="new-game">NEW GAME</button>
-    <section class="section-create">
-    <div class="row">
-
-    </div>
-    <div class="create-form">
-
-      <p>Name:</p><input type="text" value="" class="input-name" />
-      <div >
-        <form class="form-class">
-          <input type="radio" id="rogue" name="job" value="rogue" checked >
-          <label for="rogue">Rogue</label>
-          <input type="radio" id="berserker" name="job" value="berserker" >
-          <label for="berserker">Berserker</label>
-          <input type="radio" id="engineer" name="job" value="engineer">
-          <label for="engineer">Engineer</label>
-          <input type="radio" id="scribe" name="job" value="scribe">
-          <label for="scribe">Scribe</label>
-          <input type="radio" id="other" name="job" value="other">
-          <label for="other">Other</label><br>
-          <input id="create-btn" type="button" value="Create Character" class="create-btn">
-        </form>
-
-      </div>
-
-    </div>
-  </section>
-  </div>
-    <!-- template 1
-    <div class="main-container">
-    <div id="battle-message" class="battle-message">Shit's about to go<br>down!</div>
-    <div class="battle-flow">
-
-  </div>
-  <section>
-
-  <div class="row">
-    <div class="charbox-container">
-      <div id="char1" class="charbox-1">
-        <div id="p1hp" class="p1hp">000</div>
-        <div id="p1hp-updated" class="p1hp-updated">000</div>
-
-        <div class="char-model1-head">
-        </div>
-        <div class="char-model1-torso">
-        </div>
-      </div>
-      <div id="char2" class="charbox-2">
-        <div id="p2hp" class="p2hp">000</div>
-        <div id="p2hp-updated" class="p2hp-updated">000</div>
-        <div class="char-model2-head">
-        </div>
-        <div class="char-model2-torso">
-        </div>
-      </div>
-    </div>
-</div>
-</section>
-<section class="buttons-section">
-
-    <div class="row">
-      <div class="col span-1-of-2 box">
-        <div class="button-all1">
-          <div class="col span-1-of-2 box">
-            <div class="button-box1">
-              <button id="act-button" class="p1-atk act">Attack p1</button>
-              <button id="act-button" class="p1-buff act">Buff p1</button>
+            <div class="search-container">
+               <form>
+                  <input type="text" placeholder="Search.." class="search-field">
+                  <button type="submit"><img class="search-button"></img></button>
+               </form>
             </div>
+          </div> -->
 
-          </div>
-          <div class="col span-1-of-2 box">
-            <div class="button-box2">
-            <button id="act-button" class="p1-special act" disabled>Spec.Atkp1</button>
-            <button class="hp-check1 pass">HP1</button>
-          </div>
-          </div>
-        </div>
+         </nav>
+       </div>
       </div>
-      <div class="col span-1-of-2 box">
-      <div class="button-all2">
-        <div class="col span-1-of-2 box">
-          <div class="button-box3">
-            <button id="act-button" class="p2-atk act">Attack p2</button>
-            <button id="act-button" class="p2-buff act">Buff p2</button>
+      <div class="main-container">
+         <div id="battle-message" class="battle-message">Shit's about to go<br>down!</div>
+         <div class="battle-flow">
+         </div>
+         <section class="battle-interface">
+           <div class="button-container">
+            <div class="row">
+                  <div class="col span-1-of-4 box">
+                     <div class="button-all1">
+                       <p>HP</p>
+                        <p id="p1hp" class="p1hp">000</p>/
+                        <p id="p1hp-updated" class="p1hp-updated">000</p>
+                        <button id="act-button1" class="p1-atk act">Attack p1</button>
+                        <button id="buff-button1" class="p1-buff act">Buff p1</button>
+                        <button id="spc-button1" class="p1-special act" disabled>Spec.Atkp1</button>
+                        <button class="hp-check1 pass">HP1</button>
+                     </div>
+                  </div>
+               <div class=" col span-2-of-4">
+                  <div class="charbox-container">
+                     <div id="char1" class="charbox-1">
+                     </div>
+                     <div id="char2" class="charbox-2">
+                     </div>
+                  </div>
+               </div>
+               <div class="col span-1-of-4 box">
+                  <div class="button-all2">
+                    <p>HP</p>
+                     <p id="p2hp" class="p2hp">000 </p> /
+                     <p id="p2hp-updated" class="p2hp-updated">000</p>
+                     <button id="act-button2" class="p2-atk act">Attack p2</button>
+                     <button id="buff-button2" class="p2-buff act">Buff p2</button>
+                     <button id="spec-button2" class="p2-special act" disabled>Spec.Atkp2</button>
+                     <button class="hp-check2 pass">HP2</button>
+                  </div>
+               </div>
+            </div>
           </div>
-        </div>
-        <div class="col span-1-of-2 box">
-          <div class="button-box4">
-            <button id="act-button" class="p2-special act" disabled>Spec.Atkp2</button>
-            <button class="hp-check2 pass">HP2</button>
-          </div>
-        </div>
-
-        </div>
-
+         </section>
+         <button class="new-game">NEW GAME</button>
+         <section class="section-create">
+            <div class="row">
+            </div>
+            <div class="create-form">
+               <p>Name:</p>
+               <input type="text" value="" class="input-name" />
+               <div >
+                  <form class="form-class">
+                     <input type="radio" id="rogue" name="job" value="rogue" checked >
+                     <label for="rogue">Rogue</label>
+                     <input type="radio" id="berserker" name="job" value="berserker" >
+                     <label for="berserker">Berserker</label>
+                     <input type="radio" id="engineer" name="job" value="engineer">
+                     <label for="engineer">Engineer</label>
+                     <input type="radio" id="scribe" name="job" value="scribe">
+                     <label for="scribe">Scribe</label>
+                     <input type="radio" id="other" name="job" value="other">
+                     <label for="other">Other</label><br>
+                     <input id="create-btn" type="button" value="Create Character" class="create-btn">
+                  </form>
+               </div>
+            </div>
+         </section>
       </div>
-    </div>
-  </section>
+      <!-- template 1
+         <div class="main-container">
+         <div id="battle-message" class="battle-message">Shit's about to go<br>down!</div>
+         <div class="battle-flow">
+
+         </div>
+         <section>
+
+         <div class="row">
+         <div class="charbox-container">
+           <div id="char1" class="charbox-1">
+             <div id="p1hp" class="p1hp">000</div>
+             <div id="p1hp-updated" class="p1hp-updated">000</div>
+
+             <div class="char-model1-head">
+             </div>
+             <div class="char-model1-torso">
+             </div>
+           </div>
+           <div id="char2" class="charbox-2">
+             <div id="p2hp" class="p2hp">000</div>
+             <div id="p2hp-updated" class="p2hp-updated">000</div>
+             <div class="char-model2-head">
+             </div>
+             <div class="char-model2-torso">
+             </div>
+           </div>
+         </div>
+         </div>
+         </section>
+         <section class="buttons-section">
+
+         <div class="row">
+           <div class="col span-1-of-2 box">
+             <div class="button-all1">
+               <div class="col span-1-of-2 box">
+                 <div class="button-box1">
+                   <button id="act-button" class="p1-atk act">Attack p1</button>
+                   <button id="act-button" class="p1-buff act">Buff p1</button>
+                 </div>
+
+               </div>
+               <div class="col span-1-of-2 box">
+                 <div class="button-box2">
+                 <button id="act-button" class="p1-special act" disabled>Spec.Atkp1</button>
+                 <button class="hp-check1 pass">HP1</button>
+               </div>
+               </div>
+             </div>
+           </div>
+           <div class="col span-1-of-2 box">
+           <div class="button-all2">
+             <div class="col span-1-of-2 box">
+               <div class="button-box3">
+                 <button id="act-button" class="p2-atk act">Attack p2</button>
+                 <button id="act-button" class="p2-buff act">Buff p2</button>
+               </div>
+             </div>
+             <div class="col span-1-of-2 box">
+               <div class="button-box4">
+                 <button id="act-button" class="p2-special act" disabled>Spec.Atkp2</button>
+                 <button class="hp-check2 pass">HP2</button>
+               </div>
+             </div>
+
+             </div>
+
+           </div>
+         </div>
+         </section>
 
 
 
-      <button class="new-game">NEW GAME</button>
-      <section class="section-create">
-      <div class="row">
+           <button class="new-game">NEW GAME</button>
+           <section class="section-create">
+           <div class="row">
 
-      </div>
-      <div class="create-form">
+           </div>
+           <div class="create-form">
 
-        <p>Name:</p><input type="text" value="" class="input-name" />
-        <div >
-          <form class="form-class">
-            <input type="radio" id="rogue" name="job" value="rogue" checked >
-            <label for="rogue">Rogue</label>
-            <input type="radio" id="berserker" name="job" value="berserker" >
-            <label for="berserker">Berserker</label>
-            <input type="radio" id="engineer" name="job" value="engineer">
-            <label for="engineer">Engineer</label>
-            <input type="radio" id="scribe" name="job" value="scribe">
-            <label for="scribe">Scribe</label>
-            <input type="radio" id="other" name="job" value="other">
-            <label for="other">Other</label><br>
-            <input id="create-btn" type="button" value="Create Character" class="create-btn">
-          </form>
+             <p>Name:</p><input type="text" value="" class="input-name" />
+             <div >
+               <form class="form-class">
+                 <input type="radio" id="rogue" name="job" value="rogue" checked >
+                 <label for="rogue">Rogue</label>
+                 <input type="radio" id="berserker" name="job" value="berserker" >
+                 <label for="berserker">Berserker</label>
+                 <input type="radio" id="engineer" name="job" value="engineer">
+                 <label for="engineer">Engineer</label>
+                 <input type="radio" id="scribe" name="job" value="scribe">
+                 <label for="scribe">Scribe</label>
+                 <input type="radio" id="other" name="job" value="other">
+                 <label for="other">Other</label><br>
+                 <input id="create-btn" type="button" value="Create Character" class="create-btn">
+               </form>
 
-        </div>
+             </div>
 
-      </div>
-    </section>
-    </div> -->
+           </div>
+         </section>
+         </div> -->
       <div class="footer-container">
-        <div class="footer-item"/>
-          <p>
+         <div class="footer-item">
+           <h3>Tips</h3>
+            <p>Buffs are a way to enable special moves, but often takes a full turn to activate
+            </p>
+         </div>
+         <div class="footer-item">
+           <h3>Tips</h3>
+            <p>
+              How to get stuff done
+            </p>
+         </div>
+         <div class="footer-item">
+           <h3>Tips</h3>
+            <p>
+              Let's get this straight
+            </p>
+         </div>
+         <div class="footer-social-container">
 
-          </p>
+         </div>
       </div>
-      <div class="footer-item"/>
-        <p>
-
-        </p>
-      </div>
-      <div class="footer-item"/>
-        <p>
-
-        </p>
-      </div>
-
-
-
-
-
-    <script src="js/index.js">
-
-    </script>
-  </body>
+      <script src="js/index.js"></script>
+   </body>
 </html>

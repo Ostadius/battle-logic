@@ -20,7 +20,7 @@ export default class Engineer extends Job{
   }
   elecTrap=()=>{
     let newHp = this.hp - 4;
-    this.text = 'sharpens the blade with blood';
+    this.text = ' sets the trap.';
       return newHp;
   }
   toggleBuff=()=>{
